@@ -1,0 +1,129 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px; /* Espaciado entre botones */
+}
+
+.header-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Tamaño del icono */
+  color: #333; /* Color del icono */
+}
+
+.header-button:hover {
+  color: #007bff; /* Color al pasar el ratón */
+}
+
+.dashboard-content {
+  display: flex; /* Flexbox para alinear categorías, productos y carrito */
+}
+
+.categories {
+  width: 200px; /* Ancho de la sección de categorías */
+}
+
+.category-item {
+  display: flex; /* Flexbox para alinear icono y texto */
+  align-items: center; /* Centra verticalmente el texto */
+  padding: 8px 0; /* Espaciado vertical */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la categoría */
+}
+
+.category-icon {
+  margin-right: 10px; /* Espaciado a la derecha del icono */
+  color: white; /* Color del icono */
+  font-size: 1.2em; /* Tamaño del icono */
+}
+
+.category-item:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Fondo iluminado al pasar el ratón */
+}
+
+.category-separator {
+  border: none; /* Sin borde para el separador */
+  height: 1px; /* Altura del separador */
+  background-color: #ccc; /* Color del separador */
+  margin: 8px 0; /* Espaciado del separador */
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 10px; /* Espaciado entre productos */
+  flex-grow: 1; /* Hace que la cuadrícula de productos ocupe el espacio restante */
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Alinea imagen y texto en columna */
+  height: 200px; /* Altura fija para cada tarjeta */
+}
+
+.product-image {
+  width: 100%;
+  height: 100px; /* Altura fija para la imagen */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.product-name {
+  padding: 10px;
+}
+
+/* Estilos del carrito */
+.cart {
+  width: 300px; /* Ancho del carrito */
+  margin-left: 20px; /* Margen a la izquierda del carrito */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.cart h3 {
+  margin: 0 0 10px 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre imagen y detalles */
+  margin-bottom: 10px; /* Espacio entre elementos del carrito */
+}
+
+.cart-item-image {
+  width: 50px; /* Ancho de la imagen en el carrito */
+  height: 50px; /* Alto de la imagen en el carrito */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.cart-item-details {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  padding: 0 10px; /* Espaciado lateral */
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red; /* Color del botón de eliminar */
+  font-size: 18px; /* Tamaño del icono de eliminar */
+}
+
+.remove-button:hover {
+  color: darkred; /* Color al pasar el ratón */
+}
+
